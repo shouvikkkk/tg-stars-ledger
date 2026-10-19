@@ -1,0 +1,6 @@
+# Runtime: none — tg-stars-ledger is stdlib-only.
+# Test/development:
+#   pip install pytest
+
+
+
