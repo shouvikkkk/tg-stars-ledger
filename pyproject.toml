@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tg-stars-ledger"
+version = "0.1.0"
+description = "Crash-safe Telegram Stars payment ledger with automatic stuck-payment reconciliation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shouvik Maji" }]
+keywords = ["telegram", "stars", "payments", "aiogram", "bot"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Communications :: Chat",
+]
+dependencies = []
+
+[project.scripts]
+tg-stars-ledger = "tg_stars_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tg_stars_ledger*"]
